@@ -1,19 +1,98 @@
 <template>
     <SiteHeader />
-    <main id="main">
-        <div class="container d-flex">
-            <SiteSidebar />
+    <main id="main" class="pb-5">
+        <div class="container d-flex align-items-center">
+            <!-- sidebar -->
+            <div class="site-sidebar">
+                <div
+                    class="person"
+                    v-for="person in people"
+                    :key="person.key"
+                    :class="person_active_state(person.key)"
+                    @click="toggle_person(person.key)">
+                    <div class="person-avatar">
+                        <img :src="require(`@/assets/images/${person.avatar}`)" :alt="person.name" />
+                    </div>
+                    <div class="person-text">
+                        <div class="icon" :style="{'background-color': person.icon}"></div>
+                        <p class="text mb-0">{{ person.name }}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- map -->
+            <div class="map">
+                <div class="map-base">
+                    <img :src="require('@/assets/images/map-base.png')" class="w-100" alt="Map" />
+                </div>
+                <template v-for="person in people" :key="person.key">
+                    <Transition name="fade">
+                        <div class="map-dots" v-show="show_dots(person.key)">
+                            <img :src="require(`@/assets/images/${person.dots}`)" class="w-100" :alt="person.name" />
+                        </div>
+                    </Transition>
+                </template>
+            </div>
         </div>
     </main>
 </template>
 
 <script>
 import SiteHeader from './general/header/SiteHeader.vue'
-import SiteSidebar from './general/SiteSidebar.vue';
-
 export default {
     components: {
-        SiteHeader, SiteSidebar
+        SiteHeader
+    },
+    data() {
+        return {
+            active_person: '',
+            people: [
+                {
+                    key: 1,
+                    name: '康熙皇帝',
+                    avatar: 'p1.png',
+                    icon: '#443307',
+                    dots: 'map-dots-01.svg'
+                },
+                {
+                    key: 2,
+                    name: '乾隆皇帝',
+                    avatar: 'p2.png',
+                    icon: '#74570d',
+                    dots: 'map-dots-02.svg'
+                },
+                {
+                    key: 3,
+                    name: '其他皇帝',
+                    avatar: 'p3.png',
+                    icon: '#cf9d1d',
+                    dots: 'map-dots-03.svg'
+                }
+            ]
+        }
+    },
+    methods: {
+        person_active_state(key) {
+            if (this.active_person) {
+                return this.active_person === key ? 'active' : 'inactive'
+            } else {
+                return false
+            }
+        },
+        toggle_person(key) {
+            this.active_person = key
+        },
+        show_dots(key) {
+            if (this.active_person) {
+                return this.active_person === key 
+            } else {
+                return true
+            }
+        }
     }
 }
 </script>
+
+<style lang="sass">
+@import "/src/assets/sass/general/_sidebar"
+@import "/src/assets/sass/general/_map"
+</style>
