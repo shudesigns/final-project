@@ -1,0 +1,31 @@
+.site-sidebar
+    flex-shrink: 0
+    .person
+        display: flex
+        flex-direction: column
+        align-items: center
+        + .person
+            margin-top: 30px
+        &-avatar
+            flex-shrink: 0
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            overflow: hidden
+            img
+                display: block
+                width: 100%
+                height: auto
+        &-text
+            display: flex
+            align-items: center
+            text-align: center
+            margin-top: 15px
+            .icon
+                width: 18px
+                height: 18px
+                border-radius: 50%
+                margin: 0 5px 0 -5px
+            .text
+                font-size: .9125rem
+                font-weight: 500
