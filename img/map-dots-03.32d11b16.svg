@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 7087 3373" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g id="圖層-4" serif:id="圖層 4" transform="matrix(4.16667,0,0,4.16667,0,0)">
+        <g transform="matrix(0,-1,-1,0,851.503,490.635)">
+            <path d="M-8.766,-8.766C-13.607,-8.766 -17.532,-4.842 -17.532,0C-17.532,4.841 -13.607,8.766 -8.766,8.766C-3.925,8.766 0,4.841 0,0C0,-4.842 -3.925,-8.766 -8.766,-8.766" style="fill:rgb(154,255,187);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,851.503,490.635)">
+            <ellipse cx="-8.766" cy="0" rx="8.766" ry="8.766" style="fill:none;stroke:black;stroke-width:0.41px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,956.013,501.745)">
+            <path d="M-8.766,-8.766C-13.607,-8.766 -17.532,-4.842 -17.532,0C-17.532,4.841 -13.607,8.766 -8.766,8.766C-3.925,8.766 0,4.841 0,0C0,-4.842 -3.925,-8.766 -8.766,-8.766" style="fill:rgb(154,255,187);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,956.013,501.745)">
+            <ellipse cx="-8.766" cy="0" rx="8.766" ry="8.766" style="fill:none;stroke:black;stroke-width:0.41px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,871.476,490.635)">
+            <path d="M-8.766,-8.766C-13.607,-8.766 -17.532,-4.842 -17.532,0C-17.532,4.841 -13.607,8.766 -8.766,8.766C-3.925,8.766 0,4.841 0,0C0,-4.842 -3.925,-8.766 -8.766,-8.766" style="fill:rgb(154,255,187);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,871.476,490.635)">
+            <ellipse cx="-8.766" cy="0" rx="8.766" ry="8.766" style="fill:none;stroke:black;stroke-width:0.41px;"/>
+        </g>
+        <text x="847.417px" y="503.591px" style="font-family:'Monaco';font-size:13.325px;">1</text>
+        <text x="951.927px" y="514.702px" style="font-family:'Monaco';font-size:13.325px;">2</text>
+        <text x="867.391px" y="503.591px" style="font-family:'Monaco';font-size:13.325px;">3</text>
+    </g>
+</svg>

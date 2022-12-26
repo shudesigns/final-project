@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 7087 3373" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g id="圖層-2" serif:id="圖層 2" transform="matrix(4.16667,0,0,4.16667,0,0)">
+        <g transform="matrix(0,-1,-1,0,863.275,508.204)">
+            <path d="M-21.611,-21.611C-33.546,-21.611 -43.221,-11.936 -43.221,-0C-43.221,11.935 -33.546,21.611 -21.611,21.611C-9.676,21.611 -0,11.935 -0,-0C-0,-11.936 -9.676,-21.611 -21.611,-21.611" style="fill:rgb(255,255,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,863.275,508.204)">
+            <ellipse cx="-21.611" cy="0" rx="21.61" ry="21.611" style="fill:none;stroke:black;stroke-width:1px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,1043.51,319.792)">
+            <path d="M-21.611,-21.611C-33.546,-21.611 -43.221,-11.936 -43.221,-0C-43.221,11.935 -33.546,21.611 -21.611,21.611C-9.676,21.611 -0,11.935 -0,-0C-0,-11.936 -9.676,-21.611 -21.611,-21.611" style="fill:rgb(255,255,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,1043.51,319.792)">
+            <ellipse cx="-21.611" cy="0" rx="21.61" ry="21.611" style="fill:none;stroke:black;stroke-width:1px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,838.244,467.795)">
+            <path d="M-6.876,-6.876C-10.673,-6.876 -13.752,-3.798 -13.752,0.001C-13.752,3.798 -10.673,6.876 -6.876,6.876C-3.078,6.876 0.001,3.798 0.001,0.001C0.001,-3.798 -3.078,-6.876 -6.876,-6.876" style="fill:rgb(255,255,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,838.244,467.795)">
+            <ellipse cx="-6.876" cy="0" rx="6.876" ry="6.876" style="fill:none;stroke:black;stroke-width:0.32px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,914.05,548.904)">
+            <path d="M-6.876,-6.876C-10.673,-6.876 -13.752,-3.798 -13.752,0.001C-13.752,3.798 -10.673,6.876 -6.876,6.876C-3.078,6.876 0.001,3.798 0.001,0.001C0.001,-3.798 -3.078,-6.876 -6.876,-6.876" style="fill:rgb(255,255,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,914.05,548.904)">
+            <ellipse cx="-6.876" cy="0" rx="6.876" ry="6.876" style="fill:none;stroke:black;stroke-width:0.32px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,1685.9,359.211)">
+            <path d="M-6.876,-6.876C-10.673,-6.876 -13.752,-3.798 -13.752,0.001C-13.752,3.798 -10.673,6.876 -6.876,6.876C-3.078,6.876 0.001,3.798 0.001,0.001C0.001,-3.798 -3.078,-6.876 -6.876,-6.876" style="fill:rgb(255,255,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,1685.9,359.211)">
+            <ellipse cx="-6.876" cy="0" rx="6.876" ry="6.876" style="fill:none;stroke:black;stroke-width:0.32px;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,1662.78,288.161)">
+            <path d="M-6.876,-6.876C-10.673,-6.876 -13.752,-3.798 -13.752,0.001C-13.752,3.798 -10.673,6.876 -6.876,6.876C-3.078,6.876 0.001,3.798 0.001,0.001C0.001,-3.798 -3.078,-6.876 -6.876,-6.876" style="fill:rgb(255,255,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0,-1,-1,0,1662.78,288.161)">
+            <ellipse cx="-6.876" cy="0" rx="6.876" ry="6.876" style="fill:none;stroke:black;stroke-width:0.32px;"/>
+        </g>
+        <text x="853.202px" y="540.147px" style="font-family:'Monaco';font-size:32.851px;">1</text>
+        <text x="1033.44px" y="351.735px" style="font-family:'Monaco';font-size:32.851px;">2</text>
+        <text x="835.039px" y="477.959px" style="font-family:'Monaco';font-size:10.452px;">3</text>
+        <text x="910.845px" y="559.068px" style="font-family:'Monaco';font-size:10.452px;">4</text>
+        <text x="1682.69px" y="369.375px" style="font-family:'Monaco';font-size:10.452px;">5</text>
+        <text x="1659.58px" y="298.325px" style="font-family:'Monaco';font-size:10.452px;">5</text>
+    </g>
+</svg>
