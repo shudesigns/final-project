@@ -9,7 +9,7 @@
 
 <script>
 import SiteHeader from './general/header/SiteHeader.vue'
-import SiteSidebar from './general/header/SiteSidebar.vue';
+import SiteSidebar from './general/SiteSidebar.vue';
 
 export default {
     components: {
