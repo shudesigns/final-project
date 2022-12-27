@@ -24,9 +24,9 @@
                 <div class="map-base">
                     <img :src="require('@/assets/images/map-base.png')" class="w-100" alt="Map" />
                 </div>
-                <template v-for="person in people" :key="person.key">
+                <template v-for="person in people" :key="person.dots">
                     <Transition name="fade">
-                        <div class="map-dots" v-show="show_dots(person.key)">
+                        <div class="map-dots" v-if="person.dots" v-show="show_dots(person.key)">
                             <img :src="require(`@/assets/images/${person.dots}`)" class="w-100" :alt="person.name" />
                         </div>
                     </Transition>
@@ -66,6 +66,12 @@ export default {
                     avatar: 'p3.png',
                     icon: '#cf9d1d',
                     dots: 'map-dots-03.svg'
+                },
+                {
+                    key: 'all',
+                    name: '顯示全部',
+                    avatar: 'p4.png',
+                    icon: '#ffc74f'
                 }
             ]
         }
@@ -79,7 +85,11 @@ export default {
             }
         },
         toggle_person(key) {
-            this.active_person = key
+            if (key !== 'all') {
+                this.active_person = key
+            } else {
+                this.active_person = ''
+            }
         },
         show_dots(key) {
             if (this.active_person) {
