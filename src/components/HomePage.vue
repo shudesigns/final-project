@@ -1,5 +1,8 @@
 <template>
+    <!-- header -->
     <SiteHeader />
+
+    <!-- main -->
     <main id="main" class="pb-5">
         <div class="container d-flex align-items-center">
             <!-- sidebar -->
@@ -31,16 +34,24 @@
                         </div>
                     </Transition>
                 </template>
+                <div class="map-dots">
+                    <div class="dot" data-bs-toggle="modal" data-bs-target="#map_modal"></div>
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- map modal -->
+    <MapModal />
 </template>
 
 <script>
 import SiteHeader from './general/header/SiteHeader.vue'
+import MapModal from './general/MapModal.vue'
+import 'bootstrap/dist/js/bootstrap'
 export default {
     components: {
-        SiteHeader
+        SiteHeader, MapModal
     },
     data() {
         return {
