@@ -1,0 +1,23 @@
+$btn-bg: #dabb7c
+$btn-bg-hover: darken($btn-bg, 35%)
+
+// modal
+.modal
+    .modal-header
+        .modal-title
+            font-weight: 700
+    .modal-body
+        .buttons
+            .btn
+                width: 2.25rem
+                height: 2.25rem
+                padding: 0
+                border: none
+                border-radius: 0
+                background-color: $btn-bg
+                font-size: .875rem
+                &.disabled
+                    opacity: .5
+                &:hover
+                    background-color: $btn-bg-hover
+                    color: #fff

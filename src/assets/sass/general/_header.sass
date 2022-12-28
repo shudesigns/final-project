@@ -1,0 +1,60 @@
+$nav-btn-bg: #dabb7c
+$nav-btn-bg-hover: darken($nav-btn-bg, 35%)
+
+.site-header
+    margin: 50px 0 30px
+    .title
+        h1
+            font-size: 2rem
+            font-weight: 700
+            &::after
+                content: ''
+                display: block
+                margin: 20px auto
+                background-color: $nav-btn-bg-hover
+                width: 80px
+                height: 5px
+    .navbar
+        margin-top: 30px
+        .btn
+            position: relative
+            border: none
+            border-radius: 0
+            background-color: $nav-btn-bg
+            width: 120px
+            height: 40px
+            font-size: .875rem
+            font-weight: 600
+            transition: background-color .25s ease-out, color .25s ease-out
+            &::before, &::after, span::before, span::after
+                content: ''
+                position: absolute
+                transition: border-color .25s ease-out
+            &::before, &::after
+                left: -10px
+                border-left: 10px solid transparent
+            &::before, span::before
+                top: 0
+                border-bottom: 20px solid $nav-btn-bg
+            &::after, span::after
+                bottom: 0
+                border-top: 20px solid $nav-btn-bg
+            span
+                &::before, &::after
+                    right: -10px
+                    border-right: 10px solid transparent
+            &:hover
+                background-color: $nav-btn-bg-hover
+                color: #ffffff
+                &::before, span::before
+                    border-bottom-color: $nav-btn-bg-hover
+                &::after, span::after
+                    border-top-color: $nav-btn-bg-hover
+        .active
+            .btn
+                background-color: $nav-btn-bg-hover
+                color: #ffffff
+                &::before, span::before
+                    border-bottom-color: $nav-btn-bg-hover
+                &::after, span::after
+                    border-top-color: $nav-btn-bg-hover

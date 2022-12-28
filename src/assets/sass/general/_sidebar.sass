@@ -1,0 +1,38 @@
+.site-sidebar
+    flex-shrink: 0
+    margin-right: 60px
+    .person
+        display: flex
+        flex-direction: column
+        align-items: center
+        cursor: pointer
+        transition: transform .3s ease-out, opacity .2s ease-out
+        + .person
+            margin-top: 30px
+        &:hover
+            transform: scale(1.1)
+        &.inactive
+            opacity: .35
+        &-avatar
+            flex-shrink: 0
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            overflow: hidden
+            img
+                display: block
+                width: 100%
+                height: auto
+        &-text
+            display: flex
+            align-items: center
+            text-align: center
+            margin-top: 10px
+            .icon
+                width: 1rem
+                height: 1rem
+                border-radius: 50%
+                margin: 0 5px 0 -5px
+            .text
+                font-size: .9125rem
+                font-weight: 500
