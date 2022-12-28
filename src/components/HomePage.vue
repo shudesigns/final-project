@@ -1,6 +1,20 @@
 <template>
+
     <!-- header -->
-    <SiteHeader />
+    <header class="site-header">
+        <div class="title">
+            <h1 class="text-center mb-0">{{ title }}</h1>
+        </div>
+        <nav class="navbar d-block">
+            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-5 mb-0">
+                <li v-for="area in areas" :key="area.key" :class="area_active_state(area.key)">
+                    <button type="button" class="btn" @click="toggle_area(area.key)">
+                        <span>{{ area.name }}</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- main -->
     <main id="main" class="pb-5">
@@ -29,10 +43,17 @@
                 <div class="map-base">
                     <img :src="require('@/assets/images/map-base.png')" class="w-100" alt="Map" />
                 </div>
+                <template v-for="area in areas" :key="area.key">
+                    <Transition name="fade">
+                        <div class="map-area" v-if="area.image" v-show="area.key === active_area">
+                            <img :src="require(`@/assets/images/${area.image}`)" class="d-block w-100" :alt="area.name" />
+                        </div>
+                    </Transition>
+                </template>
                 <template v-for="person in people" :key="person.dots">
                     <Transition name="fade">
                         <div class="map-dots" v-if="person.dots" v-show="show_dots(person.key)">
-                            <img :src="require(`@/assets/images/${person.dots}`)" class="w-100" :alt="person.name" />
+                            <img :src="require(`@/assets/images/${person.dots}`)" class="d-block w-100" :alt="person.name" />
                         </div>
                     </Transition>
                 </template>
@@ -51,18 +72,46 @@
 
     <!-- map modal -->
     <MapModal />
+
 </template>
 
 <script>
-import SiteHeader from './general/header/SiteHeader.vue'
 import MapModal from './general/MapModal.vue'
 import TimeLine from './general/TimeLine.vue'
 export default {
     components: {
-        SiteHeader, MapModal, TimeLine
+        MapModal, TimeLine
     },
     data() {
         return {
+            title: '悠遊避暑山莊',
+            active_area: '',
+            areas: [
+                {
+                    key: 'all',
+                    name: '顯示全部'
+                },
+                {
+                    key: 1,
+                    name: '宮廷區',
+                    image: 'map-area-01.png'
+                },
+                {
+                    key: 2,
+                    name: '湖泊區',
+                    image: 'map-area-02.png'
+                },
+                {
+                    key: 3,
+                    name: '平原區',
+                    image: 'map-area-03.png'
+                },
+                {
+                    key: 4,
+                    name: '山岳寺廟區',
+                    image: 'map-area-04.png'
+                }
+            ],
             active_person: '',
             people: [
                 {
@@ -97,6 +146,24 @@ export default {
         }
     },
     methods: {
+        toggle_area(key) {
+            if (key !== 'all') {
+                this.active_area = key
+            } else {
+                this.active_area = ''
+            }
+        },
+        area_active_state(key) {
+            if (this.active_area) {
+                return this.active_area === key ? 'active' : 'inactive'
+            } else {
+                if (key === 'all') {
+                    return 'active'
+                } else {
+                    return false
+                }
+            }
+        },
         person_active_state(key) {
             if (this.active_person) {
                 return this.active_person === key ? 'active' : 'inactive'
@@ -123,6 +190,7 @@ export default {
 </script>
 
 <style lang="sass">
+@import "/src/assets/sass/general/_header.sass"
 @import "/src/assets/sass/general/_sidebar"
 @import "/src/assets/sass/general/_map"
 </style>

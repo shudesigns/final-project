@@ -2,7 +2,7 @@ $nav-btn-bg: #dabb7c
 $nav-btn-bg-hover: darken($nav-btn-bg, 35%)
 
 .site-header
-    margin: 50px 0 
+    margin: 50px 0 30px
     .title
         h1
             font-size: 2rem
@@ -21,8 +21,9 @@ $nav-btn-bg-hover: darken($nav-btn-bg, 35%)
             border: none
             border-radius: 0
             background-color: $nav-btn-bg
-            width: 140px
+            width: 120px
             height: 40px
+            font-size: .875rem
             font-weight: 600
             transition: background-color .25s ease-out, color .25s ease-out
             &::before, &::after, span::before, span::after
@@ -43,6 +44,14 @@ $nav-btn-bg-hover: darken($nav-btn-bg, 35%)
                     right: -10px
                     border-right: 10px solid transparent
             &:hover
+                background-color: $nav-btn-bg-hover
+                color: #ffffff
+                &::before, span::before
+                    border-bottom-color: $nav-btn-bg-hover
+                &::after, span::after
+                    border-top-color: $nav-btn-bg-hover
+        .active
+            .btn
                 background-color: $nav-btn-bg-hover
                 color: #ffffff
                 &::before, span::before
