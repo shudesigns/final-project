@@ -1,22 +1,38 @@
 .time-line 
-    margin-top: 50px
+    margin-top: 25px
     margin-left: 140px
-    color: #fff
-    .line
-        width: 1px
-        height: 35px
-        background-color: #262626
-    .bar
-        height: 30px
-        transition: opacity .3s ease-out
-        &.inactive
-            opacity: .25
-        &.bar-1
-            background-color: #443307
-            width: 40%
-        &.bar-2
-            background-color: #74570d
-            width: 20%   
-        &.bar-3
-            background-color: #cf9d1d
-            width: 40%
+    .item-1
+        width: 40%
+    .item-2
+        width: 50%
+    .item-3
+        width: 10%
+    .legends
+        font-size: .75rem
+        .legend-3
+            width: calc(10% - 1rem)
+    .stacked-bar
+        margin: 5px 0
+        .line
+            width: 1px
+            height: 35px
+            background-color: #262626
+        .bar
+            color: #fff
+            height: 30px
+            transition: opacity .3s ease-out
+            &.inactive
+                opacity: .25
+            &.bar-1
+                background-color: #443307
+            &.bar-2
+                background-color: #74570d  
+            &.bar-3
+                background-color: #cf9d1d
+    .stories
+        margin-top: 15px
+        font-size: .8125rem
+        .story
+            padding-right: 1rem
+            ul
+                padding-left: 1.5rem

@@ -70,7 +70,8 @@ export default {
                     name: '康熙皇帝',
                     avatar: 'p1.png',
                     icon: '#443307',
-                    dots: 'map-dots-01.svg'
+                    dots: 'map-dots-01.svg',
+                    story: `<ul><li><div class="d-flex gap-2"><p class="mb-0">康熙 20 年(1681 年)，四月，康熙皇帝由喜峰口北上塞外巡視狩獵，設置木蘭圍場。</p><img src="${require('@/assets/images/p1-story-1.png')}" alt="" /></div></li><li class="mt-3"><div class="d-flex gap-2"><p class="mb-0">康熙 27 年(1688 年)，準噶爾之役始於準噶爾首領噶爾丹入侵喀爾喀蒙古，並乘勝進兵至內蒙古。</p><img src="${require('@/assets/images/p1-story-2.png')}" alt="" /></div></li></ul>`
                 },
                 {
                     key: 2,
