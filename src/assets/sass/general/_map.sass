@@ -7,6 +7,76 @@
         left: 0
         right: 0
         bottom: 0
+    .map-area
+        .area-image
+            position: absolute
+            .toggle
+                position: absolute
+                z-index: 999
+                top: calc(50% - 10px)
+                left: calc(50% - 10px)
+                width: 22px
+                height: 22px
+                border: 2px solid #ffffff
+                border-radius: 50%
+                opacity: .8
+                cursor: pointer
+        .area-description
+            position: absolute
+            z-index: 99
+            width: 400px
+            padding: 1rem
+            background-color: #f6f3ea
+            border: 3px solid #262626
+            font-size: .875rem
+            text-align: justify
+            h5
+                font-size: 1rem
+                font-weight: 700
+        &.area-1
+            .area-image
+                top: 54.63%
+                left: 15.3%
+                width: 79.05%
+                .toggle
+                    background-color: #61240A
+            .area-description
+                right: calc(50% - 500px)
+                bottom: 5%
+        &.area-2
+            .area-image
+                top: 33.25%
+                left: 34.55%
+                width: 57.9%
+                .toggle
+                    top: 35%
+                    left: 55%
+                    background-color: #295597
+            .area-description
+                top: 10%
+                left: calc(50% - 250px)
+        &.area-3
+            .area-image
+                top: 15.75%
+                left: 33.5%
+                width: 54.9%
+                .toggle
+                    top: 35%
+                    background-color: #75BD74
+            .area-description
+                top: 10%
+                left: calc(50% - 325px)
+        &.area-4
+            .area-image
+                width: 100%
+                top: 0
+                left: 0
+                .toggle
+                    top: 10%
+                    background-color: #FFB800
+            .area-description
+                top: 15%
+                left: calc(50% - 200px)
     .map-dots
         .dot
             position: absolute
