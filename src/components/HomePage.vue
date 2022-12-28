@@ -5,6 +5,7 @@
     <!-- main -->
     <main id="main" class="pb-5">
         <div class="container d-flex align-items-center">
+
             <!-- sidebar -->
             <div class="site-sidebar">
                 <div
@@ -22,6 +23,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- map -->
             <div class="map">
                 <div class="map-base">
@@ -39,6 +41,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <!-- timeline -->
+            <TimeLine :active_person="active_person" :people="people" />
+        </div>
+
     </main>
 
     <!-- map modal -->
@@ -48,10 +56,10 @@
 <script>
 import SiteHeader from './general/header/SiteHeader.vue'
 import MapModal from './general/MapModal.vue'
-import 'bootstrap/dist/js/bootstrap'
+import TimeLine from './general/TimeLine.vue'
 export default {
     components: {
-        SiteHeader, MapModal
+        SiteHeader, MapModal, TimeLine
     },
     data() {
         return {

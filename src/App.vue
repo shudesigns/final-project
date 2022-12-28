@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import 'bootstrap/dist/js/bootstrap'
 import HomePage from './components/HomePage.vue'
 
 export default {
